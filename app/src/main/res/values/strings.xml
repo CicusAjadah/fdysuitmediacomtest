@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SuitMedia Competency Test</string>
+    <!-- Hint Text -->
+    <string name="hint_name">Name</string>
+    <string name="hint_palindrome">Palindrome</string>
+    <string name="hint_back">BACK</string>
+
+    <!-- Text Buat Static/Dynamic -->
+    <string name="text_check">CHECK</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_selected_user">Selected User Name</string>
+    <string name="text_chooes_user">Choose a User</string>
+    <string name="text_email">email</string>
+    <string name="text_retry">Try Again</string>
+    <string name="text_end">You Reached The End :)</string>
+
+
+    <!-- Title Text -->
+    <string name="second_act_title">Second Screen</string>
+    <string name="third_act_title">Third Screen</string>
+
+    <!-- Error Text -->
+    <string name="error_not_fill">Please Fill The Blank!</string>
+
+</resources>

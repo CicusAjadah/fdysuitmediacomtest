@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_ic_person"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/circle_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_white"
+        app:layout_constraintBottom_toBottomOf="@+id/background_ic_person"
+        app:layout_constraintEnd_toEndOf="@+id/background_ic_person"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/background_ic_person"
+        app:layout_constraintTop_toTopOf="@+id/background_ic_person" />
+
+    <EditText
+        android:id="@+id/ed_home_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/hint_name"
+        android:minHeight="40dp"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_ic_person" />
+
+    <EditText
+        android:id="@+id/ed_home_palindrome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="40dp"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/hint_palindrome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_home_name" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/button"
+        android:height="40dp"
+        android:text="@string/text_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_home_palindrome" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:height="40dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/text_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
